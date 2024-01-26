@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="lt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+    <meta name="description" content="Lietuvos moddingo entuziastų bendruomenė" />
+    <meta name="keywords" content="modding, pc, overclocking, kompiuterių gražinimas, watercooling, elektronika, elektrotechnika, FanBus - Namų sąlygomis" />
+    <link rel="stylesheet" href="../client/css/base.css" type="text/css" media="all" />
+    <script type="text/javascript" src="../client/js/base.js"></script>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss/index.html" />             
+    <title>
+        FanBus - Namų sąlygomis &lt; Straipsniai | modding.lt                 
+    </title>
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-108302-3']);
+      _gaq.push(['_setDomainName', '.modding.lt']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+</head>
+<body> 
+
+    <div id="header">
+        <div>
+            <a href="../index.html"><img src="../client/images/logo.jpg" alt="" /></a>
+            <ul>
+                            <li style="border-left:none"><a href="../Pradzia/index.html">Pradžia</a></li>
+                            <li><a href="../Apie/index.html">Apie</a></li>
+                            <li class="sel"><a href="index.html">Straipsniai</a></li>
+                            <li><a href="../Galerija/index.html">Galerija</a></li>
+                            <li><a href="http://forumas.modding.lt">Forumas</a></li>
+                            <li><a href="../Kontaktai/index.html" style="padding-right:0px">Kontaktai</a></li>
+                                    
+            </ul>
+        </div>
+    </div>          
+    <div id="container">
+        <div id="content">
+            <div id="text">
+                <h1>FanBus - Namų sąlygomis</h1>
+                                 
+    <div class="article">
+    
+
+<p>Šiais laikais kompiuterio ir jo komponentų aušinimas darosi vis populiaresnis. Kompiuterio detalės darosi vis galingesnės, tobulesnės ir visokios kitokios -esnės :), bet tuo pačiu vis labiau kaista. Jos gali sudekti tiesiog akyse, ypač jei jomis nebus tinkamai pasirūpinta ... Vienintelė išeitis - aušinimas. Šeis laikas vis dar yra populiarus aušinimas paprastais ventiliatoriais (cooleriais), tačiau jie kelia labai didelį triukšmą, ypač jai jų yra du ar daugiau. Būtent dėl ventiliatorių keliamo ir nepageidaujamo triukšmo aš nusprendžiau parašyti šį straipsnį!</p>
+
+
+
+<p>Šiame straipsnyje aš jus pamokinsiu namų salygomis pasigaminti keturių kanalų "FanBus" valdiklį .</p>
+
+
+
+<h2>Kam to reikia?</h2>
+
+
+
+<p>Visų pirma fanbus'as leidžia kontroliuoti aušintuvų apusukų greitį ir tuo pačiu jų keliamą triukšmą. Manau dabar daug kas pagalvojo: kam man to reikia, netoks jau ir garsus mano kompiuteris! Žinokit aš irgi taip galvojau, kol neįsistačiau dvienų papildomu Sunon vantiliatorių ... Po įstatymo mano kompiuteris pradėjo dvigubai garsiau užti ir trukdyti susikaupti. Dar kartą aš manau, kad jūs dabar pagalvojote: Triukšmas gi nesikandžioja, be to aš galiu ir pakentėti! Žinoma, triukšmas tikrai nesikandžioja, bet labai trukdo, ypač tada, kai reikia buti labai susikaupusiam, pvz.: mokantis ar dirbant kokį atidų darbą. </p>
+
+
+
+<h2>Ko mums reikės?</h2>
+
+
+
+<p>Visų pirma mums reikės trupučio smegenų bei tiesių ir iš ten iš kur reikia išaugusių rankų. Be to mums prireiks lituoklio, lydmetalio, replyčių, gražto, lipnios juosteles ir krūvos laidų. Taip pat mums reikės šių detalių: </p>
+
+
+
+<ul>
+	
+
+	
+	<li>4 šešių kojelių, trijų pozicijų tumblerių (jungiklių) </li>
+	
+
+	
+	<li>4 raudonų diodų (1.5V ; 0.015A) </li>
+	
+
+	
+	<li>4 žalių diodų (1.5V ; 0.015A) </li>
+	
+
+	
+	<li>4 750 ir 240 Ohm'ų varžų </li>
+	
+
+	
+	<li>8 dviejų pinų female kistukų </li>
+	
+
+	
+	<li>1 penkių pinų female kistuko </li>
+	
+
+	
+	<li>1 penkių pinų male kistuko </li>
+	
+
+	
+	<li>4 female trijų pinų kistukų </li>
+
+
+</ul>
+
+
+
+<p><a href="../client/files/c_items/119772002142.jpg">
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772002142.jpg" /></a></p>
+
+
+
+<h2>Prie reikalo</h2>
+
+
+
+<p>Taigi pradėsime konstravimus ... o pradėsime nuo aušintuvų jungimo plokštelės. Visų pirma mums reikės pasigaminti 5 gyslų kabelį, aš tam naudojau 4 gyslų telefonini kabelį ir aplink jį apvyniotą dar vieną laidą. Žinoma visiškai laisvai galima naudoti ir kitokius laidus, bet kadangi aš kituokių neturėjau ir nenorėjau pirkti, tai teko naudoti juos. Viename jo gale reiktų pritaisyti 5 pinų female kistuką, tai žinoma irgi nėra būtina, bet labai palengvina fanbus'o montavimą kompiuteryje.</p>
+
+
+
+<p>Dabar galima pereiti prie jungimo plokštelės. Mums prireiks montažines plokštelės su skylutėmis, 1 penkių pinų male kištuko, 4 trijų pinų kistukų ir trupučio laidų. Juos galite išdėstyti plokštelėja kaip tik norite, bet atminkite, kad juos poto reiks sujungti laidais ir kad kištukų kontaktai turi būti metalu padenktoje pusėje (nesijaudinki, apačioje pataikiau smulkais nuotraukas, kurios visas paaiškina). Patariu tuos kištukus patepti klijais ir tik poto montuoti plokštelėje, nes jei jų nepriklijuosite, bus labai sunku lituoti ir prijunginėti aušintuvus. Toliau apie plokštelę nepasakosiu, o tiesiog pateiksiu nuotraukas ir jungimo schemas ... Manau kad suprasit ... </p>
+
+
+
+<p><a href="../client/files/c_items/119772002468.jpg">
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772002468.jpg" /></a><a href="../client/files/c_items/11977200289.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_11977200289.jpg" /></a><a href="../client/files/c_items/11977200351.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_11977200351.jpg" /></a><a href="../client/files/c_items/119772003865.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772003865.jpg" /></a><a href="../client/files/c_items/119772004227.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772004227.jpg" /></a><a href="../client/files/c_items/119772004933.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772004933.jpg" /></a><a href="../client/files/c_items/119772005740.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772005740.jpg" /></a><a href="../client/files/c_items/11977200612.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_11977200612.jpg" /></a></p>
+
+
+
+<p>O dabar pereisime prie pačio fanbus'o konstravimo. Pradėsime nuo kompiuterio 5.25 priekonio skydelio (faceplate) grežimo. Tam mums prireiks poperinės lipnios juostos, spec. trafareto, smeigtuko, kelių markerių ir elektrinio gražto. Pirma skydelį reikia nuodugniai išmatuoti, matuoti reikia tik jo vidinę pusę. Tų matavimų mums prireiks trafareto darymui .. Man skydelio matmenys gavosi 143x38 mm. Taigi, butent tokių matmenų poperiaus lapelio jums ir prireiks.O dabar prireiks loginio mąstymo ir gero "kalkuliatoriaus", reiks matematiškai ir geometriškai padalyti trafareta į 4 dalis horizontaliai ir į 5 dalis vertikaliai. Horizontalių ir vertikalių linijų vietose ir reikės grežti skyles. Kai pasigaminsite trafaretą skydelį reiks gražiai apklijuoti lipnia juostele iš abiejų pusių. Tada trafareta reiks priglausti prie vidines skydelio puses, smeigtuku pažymeti būsimas grežimo vietas ir jas paryškinti markeriu. </p>
+
+
+
+<p><a href="../client/files/c_items/119772006427.jpg">
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772006427.jpg" /></a><a href="../client/files/c_items/119772006788.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772006788.jpg" /></a><a href="../client/files/c_items/119772007117.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772007117.jpg" /></a><a href="../client/files/c_items/119772007416.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772007416.jpg" /></a><a href="../client/files/c_items/119772007793.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772007793.jpg" /></a><a href="../client/files/c_items/11977200817.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_11977200817.jpg" /></a><a href="../client/files/c_items/119772008447.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772008447.jpg" /></a><a href="../client/files/c_items/11977200883.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_11977200883.jpg" /></a></p>
+
+
+
+<p>Dabar imsimės pačio grežimo. Kaip sakiau aksčiau mums prireiks el. gražto, be to mums prireiks slankmačio, juo mes pamatuosime detalių plotį ir pagal jį pasiringsime gražtą. Mano matavimais visų detalių storis yra lygiai 6 mm, todėl būtent tokio storio gražtą mes ir naudosime. Nepamirškite greždami skydelį jį gerai priveržti ar kaip kitaip pritvirtinti, nes begrežiant jis gali išslysti ir jūs jį sugadinsite ... Gaila, bet man nepavyko nufotografuoti grežimo proceso, nes labai sunku tuo pačiu metu grežti ir bandyti kažką nufotografuoti :) </p>
+
+
+
+<p><a href="../client/files/c_items/119772009179.jpg">
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772009179.jpg" /></a><a href="../client/files/c_items/119772009568.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772009568.jpg" /></a><a href="../client/files/c_items/119772009958.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772009958.jpg" /></a><a href="../client/files/c_items/119772010280.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772010280.jpg" /></a></p>
+
+
+
+<p>Dabar montuosime detales į skydelį, noriu patarti, kad su led laikikliais elgtumėtes labai atsargiai, nes jie greitai lūžta. </p>
+
+
+
+<p><a href="../client/files/c_items/119772011157.jpg">
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772011157.jpg" /></a><a href="../client/files/c_items/119772011517.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772011517.jpg" /></a></p>
+
+
+
+<h2>Litavimas</h2>
+
+
+
+<p>Štai dabar prasidės pati sunkiausia dalis, reiks sulituoti kruvą detalių ir laidų į vieną darnų ir be to veikinatį įrenginį. Manau lituoti jūs mokate ir savo jėgomis tikrai pasitikite, nes kitaip jūs neskaitytumete šio straipsnio .. taigi smulkiai litavimo proceso aš neaiškinsiu, papraščiausiai pateiksiu gana aiškia įrenginio schemą ir smulkias nuotraukas. Manau turėtumėt susitvarkyti su mano pateikta schema ir pagaminti mano aprašomą fanbus'ą, bet tik noriu perspėti, kad lituotumėte atsargiai, o jei nemokate lituoti, paprašykite kokio draugo, kad sulituotų už jus. Taigi prie reikalo: visų pirma reiks pasigaminti spec. kontaktus diodams prijungti, žinoma jų galima nenaudoti, bet jie palengvina diodų keitimą perdegimo atveju... Tokių kontaktų iš viso reiks aštuonių, bet dviejų skirtingų rušių. Šios rūšys priklauso nuo i kontaktą įmontuotos varžos. taigi bus po keturis 240 ir 750 omų varžų kontaktus. Šie konkatai gaminami labai paprasatai, smulkus jų gaminimas yra pateiktas apačioje, nuotraukose. </p>
+
+
+
+<p><a href="../client/files/c_items/119772011886.jpg">
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772011886.jpg" /></a><a href="../client/files/c_items/119772012199.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772012199.jpg" /></a><a href="../client/files/c_items/119772012511.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772012511.jpg" /></a><a href="../client/files/c_items/119772012840.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772012840.jpg" /></a><a href="../client/files/c_items/119772013385.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772013385.jpg" /></a><a href="../client/files/c_items/119772013721.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772013721.jpg" /></a><a href="../client/files/c_items/119772014057.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772014057.jpg" /></a><a href="../client/files/c_items/119772014386.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772014386.jpg" /></a></p>
+
+
+
+<p>O dabar ir pradėsime pačio fanbus'o litavimą. Rekomenduočiau jums pasižymėti jungiklius atitinkamų aušintuvų numeriais, nes kitaip galite susipainioti ir sulituoti taip, kad ketvirtas jungiklis valdys pirmą aušintuvą, o pirmas-ketvirtą ir pan. Kodėl taip gali atsitikti? Paprasčiausiai norėdami paprastesnėje pozoje lituoti mes esame priversiti apsukti fanbus'ą, todėl ir atsiranda atvirkštinis litavimo procesas... Taigi dar kartą norėčiau perspėti jus, kad lituotumėte atsargiai ir budami blaivūs :) ! Toliau beveik nieko neaiškinsiu, tiesiog patieksiu chemą ir kruvą nuotraukų... </p>
+
+
+
+<p><a href="../client/files/c_items/11977201472.jpg">
+		
+		
+		<img alt="" src="../client/files/c_items/s_11977201472.jpg" /></a><a href="../client/files/c_items/119772015283.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772015283.jpg" /></a><a href="../client/files/c_items/119772015665.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772015665.jpg" /></a><a href="../client/files/c_items/119772016030.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772016030.jpg" /></a><a href="../client/files/c_items/119772017077.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772017077.jpg" /></a><a href="../client/files/c_items/119772018338.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772018338.jpg" /></a><a href="../client/files/c_items/11977201874.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_11977201874.jpg" /></a><a href="../client/files/c_items/119772019187.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772019187.jpg" /></a></p>
+
+
+
+<h2>Testavimas</h2>
+
+
+
+<p>Sukonstravome fanbus'ą, beliko tik jį išbandyti. Tam reikalui aš naudoju seną Compaq AT maiteką ir neaiškų proco aušintuvą :) Gaila fanbus'o fotosesijos metu neturėjau jokių kitų aušintuvų ir negalėjau jų pademonstruoti veikime, bet tai nesvarbu, sverbu, kad pats fanbus'as veikia :) Taigi iš karto prie fotografijų: </p>
+
+
+
+<p><a href="../client/files/c_items/119772020825.jpg">
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772020825.jpg" /></a><a href="../client/files/c_items/119772021239.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772021239.jpg" /></a><a href="../client/files/c_items/119772021594.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772021594.jpg" /></a><a href="../client/files/c_items/119772021922.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772021922.jpg" /></a></p>
+
+
+
+<p>Na štai, galime ramiai atsikvėpti, viskas veikia ir pakolkas nesprogo .. :) Tiesa, galima man neišėjo nufotografuoti besisukančio aušintuvo, tikliau išėjo, bet neišėjo nufotografuoti skirtumo tarp aušintuvo greičių... </p>
+
+
+
+<h2>Final look</h2>
+
+
+
+<p><a href="../client/files/c_items/119772022273.jpg">
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772022273.jpg" /></a><a href="../client/files/c_items/11977202266.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_11977202266.jpg" /></a><a href="../client/files/c_items/119772025963.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772025963.jpg" /></a><a href="../client/files/c_items/119772026715.jpg"> 
+		
+		
+		<img alt="" src="../client/files/c_items/s_119772026715.jpg" /></a></p>
+
+
+
+<h2>Happy End</h2>
+
+
+
+<p>Sukonstravome fanbus'ą. Manau jums neiškilo jokių neaiškumų ar nesusipratimų, bet jei iškilo ar tiesiog norite pakomentuoti mano straipsnį, parašykite man: <a href="mailto:ext@takas.lt">ext@takas.lt</a></p>
+
+
+
+<h2>Video</h2>
+
+
+
+<p>Būdamas supratingas, aš nufilmavau savo fanbusą veikime, prašau atleisti už kokybę, nes filmavau su skaitmeniniu fotoaparatu ir beto ganėtinai suspaudžiau, kas sumažino failų dydį, bet tuo pačiu ir jų kokybę...</p>
+
+
+
+<ul>
+	
+
+	
+	<li><a href="http://www.modding.lt/site/img/pics/fanbus/1.wmv">Video su garsu</a> </li>
+	
+
+	
+	<li><a href="http://www.modding.lt/site/img/pics/fanbus/2.wmv">Video be garso</a> </li>
+	
+
+	
+	<li><a class="cn" href="http://www.modding.lt/site/img/pics/fanbus/3.wmv">Video su garsu ir patamsyje</a> </li>
+	
+
+	
+	<li><a href="http://www.modding.lt/site/img/pics/fanbus/4.wmv">Video su garsu, titrais ir fonine muzika</a> </li>
+
+
+</ul>
+
+
+
+<p>Beje norint peržiūrėti šiuos filmukus, jums prireiks windows media player'io (gerai būtų 9 jo versija).</p>
+    </div>
+
+            </div>
+            <div id="side">
+                <div class="box r">                    
+                    <h1 class="fbh"><a href="http://www.facebook.com/pages/moddinglt/166905013319556" rel="ext">modding.lt Facebook'e</a></h1>
+                    <iframe src="http://www.facebook.com/plugins/fan.php?id=166905013319556&connections=6&locale=lt_LT&stream=false&css=http://www.modding.lt/client/css/fb-big.css" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:195px;" allowTransparency="true"></iframe>                 
+                    <h1>Reklama</h1>
+                    <div class="banner"><a href="../redir_banner.php@id=11.html" rel="external"><img src="../client/files/banners/silentPC_180x60.jpg" alt="www.silent-pc.lt" /></a></div><div class="banner"><a href="http://old.modding.lt/redir_banner.php?id=15" rel="external"><img src="../client/files/banners/skytech.gif" alt="skytech.lt" /></a></div><div class="banner"><a href="http://old.modding.lt/redir_banner.php?id=17" rel="external"><img src="../client/files/banners/serveriai_180.png" alt="Hostingas Serveriai.lt" /></a></div>               
+                    <script type="text/javascript"><!--
+                        google_ad_client = "ca-pub-4848839732052066";
+                        /* modding.lt bokstas */
+                        google_ad_slot = "7149976203";
+                        google_ad_width = 160;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>2003-2010 &copy; Modding.lt. Visos teisės saugomos.</p>
+    </div>
+    
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        _uacct = "UA-108302-3";
+        urchinTracker();
+    </script>
+
+</body>
+</html>

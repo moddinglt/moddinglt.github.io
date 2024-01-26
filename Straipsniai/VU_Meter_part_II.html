@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="lt">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+    <meta name="description" content="Lietuvos moddingo entuziastų bendruomenė" />
+    <meta name="keywords" content="modding, pc, overclocking, kompiuterių gražinimas, watercooling, elektronika, elektrotechnika, VU Meter (part II)" />
+    <link rel="stylesheet" href="../client/css/base.css" type="text/css" media="all" />
+    <script type="text/javascript" src="../client/js/base.js"></script>
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="../rss/index.html" />             
+    <title>
+        VU Meter (part II) &lt; Straipsniai | modding.lt                 
+    </title>
+    
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-108302-3']);
+      _gaq.push(['_setDomainName', '.modding.lt']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+</head>
+<body> 
+
+    <div id="header">
+        <div>
+            <a href="../index.html"><img src="../client/images/logo.jpg" alt="" /></a>
+            <ul>
+                            <li style="border-left:none"><a href="../Pradzia/index.html">Pradžia</a></li>
+                            <li><a href="../Apie/index.html">Apie</a></li>
+                            <li class="sel"><a href="index.html">Straipsniai</a></li>
+                            <li><a href="../Galerija/index.html">Galerija</a></li>
+                            <li><a href="http://forumas.modding.lt">Forumas</a></li>
+                            <li><a href="../Kontaktai/index.html" style="padding-right:0px">Kontaktai</a></li>
+                                    
+            </ul>
+        </div>
+    </div>          
+    <div id="container">
+        <div id="content">
+            <div id="text">
+                <h1>VU Meter (part II)</h1>
+                                 
+    <div class="article">
+     
+
+<p>Prieš kurį laiką buvau rašęs kaip pasidaryti VU meter'į per LPT, mod'as buvo iš tiesų labai paprastas, tačiau turejo vieną didelį trūkumą - užėmė LPT jung'tį. Turintys spausdintuvus arba LCD nebegalėjo juo naudotis. Nusprendžiau pratęsti VU meter'io temą aprašant kaip jį pasijungti per paprasšiausią audio išėjimą. </p>
+
+<h2>Ko mums reikės ?</h2>
+
+<ul>
+	
+	<li>1x LM3915 mikroshemos + lizdo </li>
+	
+	<li>10x 2pin lizdų </li>
+	
+	<li>10x led'ų(su laikikliais) </li>
+	
+	<li>1x mono kištuko ir lizdo </li>
+	
+	<li>1x stereo kištuko ir lizdo </li>
+	
+	<li>10x varžų </li>
+	
+	<li>poros metrų laidų </li>
+	
+	<li>dėžutės </li>
+	
+	<li>1x molex kištuko </li>
+	
+	<li>1x 10uF kondensatoriaus </li>
+	
+	<li>1x 1k varžos </li>
+
+</ul>
+
+<p>Taip pat visi reikalingi įrankiai: lituoklis, kanifolija, gnybtukai, žirklutės, gražtas, dremelis.</p>
+
+<p><a href="../client/files/c_items/120359244775.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359244775.jpg" /></a><a href="../client/files/c_items/120359244337.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359244337.jpg" /></a></p>
+
+<h2>Darbo procesas </h2>
+
+<p>Visų pirma pradėkime nuo audio kabelio šakotuvo-prailgintuvo, juk nejungsim VU meterio tiesiai į kompą, nes negirdėsime garso :)Tam panaudosime po vieną mono kištuką ir lizdą, bei po vieną stereo kištuką ir lizdą. Galima naudoti ir kitokius kištukus bei lizdus, bet šie labiausiai tinka audio laidams savo dizainu. Prailgintuvas labai paprastas, tiesiog padarome prailgituvą su vienu mono išsišakojimu. Pateikiu schemą ir porą foto.</p>
+
+<p><a href="../client/files/c_items/120359254112.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359254112.jpg" /></a><a href="../client/files/c_items/120359253447.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359253447.jpg" /></a><a href="../client/files/c_items/120359254541.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359254541.jpg" /></a><a href="../client/files/c_items/120359254983.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359254983.jpg" /></a><a href="../client/files/c_items/12035925548.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_12035925548.jpg" /></a><a href="../client/files/c_items/120359255932.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359255932.jpg" /></a></p>
+
+<p>Pereiname prie pačio VU. Schemutė yra gana paprasta, tereikia sulituoti kontaktus, viskas turi veikti iš karto, montažinės plokštės nenaudojau. Manau viską galima tiesiog sulituoti laidais, bet čia jau Jūsų pasirinkimas. Varžos priklauso nuo Jūsų led'ų, jas galima pasiskaičiuoti <a class="cn" href="http://www.metku.net/index.html?sect=view&amp;n=1&amp;path=mods/ledcalc/index_eng" target="_blank">čia.</a><br />
+	
+	Tikslų mikroschemos LM3915 aprašyma galima rasti <a class="cn" href="http://www.ee.washington.edu/stores/DataSheets/linear/lm3915.pdf" target="_blank">čia</a>. Ji kainuoja apie 7Lt. Sulituota <a href="../client/files/c_items/121153968795.jpg" rel="gallery-plants" class="thickbox">schemutė</a> atrodo maždaug taip:</p>
+
+<p><a href="../client/files/c_items/12035926735.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_12035926735.jpg" /></a><a href="../client/files/c_items/120359266917.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359266917.jpg" /></a></p>
+
+<p>Viena svarbi detalė: geriausia diodų ne lituoti, o pasidaryti jiems lizdus su juose imontuotomis varžomis, tai atrodo mazdaug va taip:</p>
+
+<p><a href="../client/files/c_items/120359272972.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359272972.jpg" /></a><a href="../client/files/c_items/120359272530.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359272530.jpg" /></a></p>
+
+<p>Taigi, sulitavę schemą pamatome, kad atsirado baisi laidų raizgalynė, saugumo sumetimais ją patariu izoliuoti karštais klijais. Schema yra ir ji veikia, bet juk nemesi tokią krūvą į dėžės kampą. Reikia geresnio sprendimo, taigi naudojame dėžutę. Kad būtų patogiau, geriausia išpjauti su popieriniu dremelio diskeliu skyle molex kištukui ir laidų išvedimui, panašiai kaip padariau aš, ir, aišku, įmontuoti mono audio lizdą.</p>
+
+<p><a href="../client/files/c_items/12035928584.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_12035928584.jpg" /></a><a href="../client/files/c_items/120359285433.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359285433.jpg" /></a><a href="../client/files/c_items/120359285056.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359285056.jpg" /></a><a href="../client/files/c_items/120359284521.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359284521.jpg" /></a><a href="../client/files/c_items/120359284125.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359284125.jpg" /></a><a href="../client/files/c_items/120359283266.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359283266.jpg" /></a><a href="../client/files/c_items/120359282743.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359282743.jpg" /></a><a href="../client/files/c_items/120359282337.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359282337.jpg" /></a><a href="../client/files/c_items/120359281969.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359281969.jpg" /></a><a href="../client/files/c_items/120359292472.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359292472.jpg" /></a></p>
+
+<p>Kai jau turitę patogią dėžutę, reikia ją kur nors patalpinti. Geriausia tai padaryti dvipusės lipnios juostos pagalba. Papraščiausiai priklijuojame prie kokios nors sienelės korpuse.</p>
+
+<p><a href="../client/files/c_items/120359299238.jpg"></a><a href="../client/files/c_items/120359303499.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359303499.jpg" /></a><a href="../client/files/c_items/120359298830.jpg">
+		
+		<img alt="" src="../client/files/c_items/s_120359298830.jpg" /></a></p>
+
+<h2>Outro</h2>
+
+<p>Norėčiau paminėti, kad šitas VU meter'is žymiai geriau atspindi muzikos ritmą. Galbūt iš išores pasikeitimų nesimato, bet jie esminiai. Didelis pliusas, kad galima jį prisijungti praktiškai prie bet kokio audio išėjimo laido ir turint 4,5V bateriją.Jei kilo kokių nors neaiškumų - apsilankykite <a href="http://www.modding.lt/forumas">musu forume</a>. Sėkmės!</p>
+    </div>
+
+            </div>
+            <div id="side">
+                <div class="box r">                    
+                    <h1 class="fbh"><a href="http://www.facebook.com/pages/moddinglt/166905013319556" rel="ext">modding.lt Facebook'e</a></h1>
+                    <iframe src="http://www.facebook.com/plugins/fan.php?id=166905013319556&connections=6&locale=lt_LT&stream=false&css=http://www.modding.lt/client/css/fb-big.css" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:180px; height:195px;" allowTransparency="true"></iframe>                 
+                    <h1>Reklama</h1>
+                    <div class="banner"><a href="../redir_banner.php@id=11.html" rel="external"><img src="../client/files/banners/silentPC_180x60.jpg" alt="www.silent-pc.lt" /></a></div><div class="banner"><a href="http://old.modding.lt/redir_banner.php?id=15" rel="external"><img src="../client/files/banners/skytech.gif" alt="skytech.lt" /></a></div><div class="banner"><a href="http://old.modding.lt/redir_banner.php?id=17" rel="external"><img src="../client/files/banners/serveriai_180.png" alt="Hostingas Serveriai.lt" /></a></div>               
+                    <script type="text/javascript"><!--
+                        google_ad_client = "ca-pub-4848839732052066";
+                        /* modding.lt bokstas */
+                        google_ad_slot = "7149976203";
+                        google_ad_width = 160;
+                        google_ad_height = 600;
+                        //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>2003-2010 &copy; Modding.lt. Visos teisės saugomos.</p>
+    </div>
+    
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        _uacct = "UA-108302-3";
+        urchinTracker();
+    </script>
+
+</body>
+</html>
